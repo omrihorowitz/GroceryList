@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6C39273D25B1FB0000DA6C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39273C25B1FB0000DA6C43 /* AppDelegate.swift */; };
 		6C39273F25B1FB0000DA6C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39273E25B1FB0000DA6C43 /* SceneDelegate.swift */; };
-		6C39274125B1FB0000DA6C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39274025B1FB0000DA6C43 /* ViewController.swift */; };
 		6C39274425B1FB0000DA6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C39274225B1FB0000DA6C43 /* Main.storyboard */; };
 		6C39274625B1FB0300DA6C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C39274525B1FB0300DA6C43 /* Assets.xcassets */; };
 		6C39274925B1FB0300DA6C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C39274725B1FB0300DA6C43 /* LaunchScreen.storyboard */; };
+		6C39275A25B1FCCE00DA6C43 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39275925B1FCCE00DA6C43 /* GroceryItem.swift */; };
+		6C39275D25B1FCE700DA6C43 /* GroceryItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39275C25B1FCE700DA6C43 /* GroceryItemController.swift */; };
+		6C39276825B205E300DA6C43 /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39276725B205E300DA6C43 /* GroceryListTableViewController.swift */; };
+		6C39276B25B2080200DA6C43 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39276A25B2080200DA6C43 /* FilterViewController.swift */; };
+		6C39276F25B211C800DA6C43 /* GroceryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C39276E25B211C800DA6C43 /* GroceryItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C39273925B1FB0000DA6C43 /* GroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C39273C25B1FB0000DA6C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C39273E25B1FB0000DA6C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C39274025B1FB0000DA6C43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C39274325B1FB0000DA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C39274525B1FB0300DA6C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C39274825B1FB0300DA6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C39274A25B1FB0300DA6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C39275925B1FCCE00DA6C43 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		6C39275C25B1FCE700DA6C43 /* GroceryItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemController.swift; sourceTree = "<group>"; };
+		6C39276725B205E300DA6C43 /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		6C39276A25B2080200DA6C43 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		6C39276E25B211C800DA6C43 /* GroceryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		6C39273B25B1FB0000DA6C43 /* GroceryList */ = {
 			isa = PBXGroup;
 			children = (
-				6C39273C25B1FB0000DA6C43 /* AppDelegate.swift */,
-				6C39273E25B1FB0000DA6C43 /* SceneDelegate.swift */,
-				6C39274025B1FB0000DA6C43 /* ViewController.swift */,
-				6C39274225B1FB0000DA6C43 /* Main.storyboard */,
-				6C39274525B1FB0300DA6C43 /* Assets.xcassets */,
-				6C39274725B1FB0300DA6C43 /* LaunchScreen.storyboard */,
-				6C39274A25B1FB0300DA6C43 /* Info.plist */,
+				6C39275125B1FB1500DA6C43 /* Model */,
+				6C39276225B1FD1800DA6C43 /* Custom Cell */,
+				6C39275425B1FB2600DA6C43 /* Controller */,
+				6C39275525B1FB3900DA6C43 /* Storyboards */,
+				6C39275625B1FB5300DA6C43 /* Resources */,
 			);
 			path = GroceryList;
+			sourceTree = "<group>";
+		};
+		6C39275125B1FB1500DA6C43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C39275925B1FCCE00DA6C43 /* GroceryItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C39275425B1FB2600DA6C43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C39275C25B1FCE700DA6C43 /* GroceryItemController.swift */,
+				6C39276725B205E300DA6C43 /* GroceryListTableViewController.swift */,
+				6C39276A25B2080200DA6C43 /* FilterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C39275525B1FB3900DA6C43 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6C39274225B1FB0000DA6C43 /* Main.storyboard */,
+				6C39274725B1FB0300DA6C43 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6C39275625B1FB5300DA6C43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C39273C25B1FB0000DA6C43 /* AppDelegate.swift */,
+				6C39273E25B1FB0000DA6C43 /* SceneDelegate.swift */,
+				6C39274525B1FB0300DA6C43 /* Assets.xcassets */,
+				6C39274A25B1FB0300DA6C43 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C39276225B1FD1800DA6C43 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C39276E25B211C800DA6C43 /* GroceryItemTableViewCell.swift */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C39274125B1FB0000DA6C43 /* ViewController.swift in Sources */,
+				6C39276B25B2080200DA6C43 /* FilterViewController.swift in Sources */,
+				6C39276F25B211C800DA6C43 /* GroceryItemTableViewCell.swift in Sources */,
+				6C39275D25B1FCE700DA6C43 /* GroceryItemController.swift in Sources */,
+				6C39276825B205E300DA6C43 /* GroceryListTableViewController.swift in Sources */,
 				6C39273D25B1FB0000DA6C43 /* AppDelegate.swift in Sources */,
+				6C39275A25B1FCCE00DA6C43 /* GroceryItem.swift in Sources */,
 				6C39273F25B1FB0000DA6C43 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = GroceryList/Info.plist;
+				INFOPLIST_FILE = GroceryList/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = GroceryList/Info.plist;
+				INFOPLIST_FILE = GroceryList/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
